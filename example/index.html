@@ -1,129 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Topic Website</title>
-    <style>
-        main {
-          display: flex;
-          flex-direction: column;
-          align-items: left;
-          color:#5F5E66
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Topic Website</title>
+  <style>
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      color: #5F5E66
+    }
 
-        }
+    article {
+      max-width: 45em;
+    }
 
-        article {
-          max-width: 45em; 
-        }
-
-        body {
-            background-color:#EFF0EC;
-        }
-        </style>        
+    body {
+      background-color: #EFF0EC;
+    }
+  </style>
 </head>
+
 <body>
-    <main>
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <a href="../">home</a>
-            </li>
-            <li>
-              example
-            </li>
-          </ul>
-        </nav>
-      </header>
-        <article>
-            <h1>Let's Talk About Text Shadows!</h1>
-            <p>Text shadows are made up of 4 values. We need the horizontal distance, the vertical distance,
-                the blur (which is optional), and the color (also optional). Shall we go through each of these 
-                values?
-            </p>
-            <br>
-            <h2>Horizontal Distance</h2>
-            <p>
-                The first value in the "text-shadow" element of CSS is the horizontal distance. The CSS basically creates a
-                duplicate line of text and shifts it horizontally to the right however many pixels you specify. In the example
-                below, I shifted the shadow horizontally only, with no vertical shifts, so we can see what it's like.
-            </p>
-            <!--CODEPEN INSERTS-->
-            <p class="codepen" data-height="386" data-theme-id="light" data-default-tab="css,result" data-user="emmajoi" data-slug-hash="KKNzZEB" style="height: 386px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Horizontal Shadow">
-                <span>See the Pen <a href="https://codepen.io/emmajoi/pen/KKNzZEB">
-                Horizontal Shadow</a> by Emma Gardner (<a href="https://codepen.io/emmajoi">@emmajoi</a>)
-                on <a href="https://codepen.io">CodePen</a>.</span>
-              </p>
-              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-            <br>
-            <h2>Vertical Distance</h2>
-            <p>
-                This is the second value in the "text-shadow" element. The vertical distance puts the
-                duplicate text, or shadow, below it. The shadow is also shifted by pixels, the same way the horizontal 
-                value was shifted. Below is an example of a vertical shift, without the horizontal.
-            </p>
-            <!--CODEPEN INSERTS-->
-            <p class="codepen" data-height="383" data-theme-id="light" data-default-tab="css,result" data-user="emmajoi" data-slug-hash="yLVOpZR" style="height: 383px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vertical Shadow">
-                <span>See the Pen <a href="https://codepen.io/emmajoi/pen/yLVOpZR">
-                Vertical Shadow</a> by Emma Gardner (<a href="https://codepen.io/emmajoi">@emmajoi</a>)
-                on <a href="https://codepen.io">CodePen</a>.</span>
-              </p>
-              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-            <br>
-            <h2>Blur</h2>
-            <p>
-                This element is optional but in my opinion it really makes a shadow look like a shadow! The blur is also done
-                pixels. The higher the number, the more blurry it becomes.
-            </p>
-            <!--CODEPEN INSERTS-->
-            <p class="codepen" data-height="373" data-theme-id="light" data-default-tab="css,result" data-user="emmajoi" data-slug-hash="MWbyrGB" style="height: 373px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Blur Shadow">
-                <span>See the Pen <a href="https://codepen.io/emmajoi/pen/MWbyrGB">
-                Blur Shadow</a> by Emma Gardner (<a href="https://codepen.io/emmajoi">@emmajoi</a>)
-                on <a href="https://codepen.io">CodePen</a>.</span>
-              </p>
-              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-            <br>
-            <h2>Color</h2>
-            <p>
-                This is another optional tag; however, if you know how to use it, you can make your shadows look much better.
-                For this example, I used really heinous colors together but it shows the contrast better. By default, the shadow 
-                will be the color of the text.
-            </p>
-            <!--CODEPEN INSERTS-->
-            <p class="codepen" data-height="372" data-theme-id="light" data-default-tab="css,result" data-user="emmajoi" data-slug-hash="wvoGpZP" style="height: 372px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Blur Shadow">
-                <span>See the Pen <a href="https://codepen.io/emmajoi/pen/wvoGpZP">
-                Blur Shadow</a> by Emma Gardner (<a href="https://codepen.io/emmajoi">@emmajoi</a>)
-                on <a href="https://codepen.io">CodePen</a>.</span>
-              </p>
-              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-            <br>
-            <h2>Other Fancy Shadow Options</h2>
-            <h3>Flipped Shadow</h3>
-            <p>
-                If you need to have your shadows go the opposite direction, you can use negative numbers as tags!
-            </p>
-            <!--CODEPEN INSERTS-->
-            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="emmajoi" data-slug-hash="WNowMvK" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Flipped Shadow">
-                <span>See the Pen <a href="https://codepen.io/emmajoi/pen/WNowMvK">
-                Flipped Shadow</a> by Emma Gardner (<a href="https://codepen.io/emmajoi">@emmajoi</a>)
-                on <a href="https://codepen.io">CodePen</a>.</span>
-              </p>
-              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-            <h3>Stacked Shadow</h3>
-            <p>
-                This is my person favorite style of shadow. If you add more than one shadow, add more by separating with commas,
-                it gives it a block effect. This example, I layered 7 shadows on top of one another to give that effect.
-            </p>
-            <!--CODEPEN INSERTS-->
-            <p class="codepen" data-height="348" data-theme-id="light" data-default-tab="css,result" data-user="emmajoi" data-slug-hash="mdOPpZW" style="height: 348px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Blur Shadow">
-                <span>See the Pen <a href="https://codepen.io/emmajoi/pen/mdOPpZW">
-                Blur Shadow</a> by Emma Gardner (<a href="https://codepen.io/emmajoi">@emmajoi</a>)
-                on <a href="https://codepen.io">CodePen</a>.</span>
-              </p>
-              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-        </article>
-    </main>
+  <main>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="../">home</a>
+          </li>
+          <li>
+            example
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <h1>Let's Talk About Text Shadows!</h1>
+      <p>Text shadows are made up of 4 values. We need the horizontal distance, the vertical distance,
+        the blur (which is optional), and the color (also optional). Shall we go through each of these
+        values?
+      </p>
+      <br>
+      <h2>Horizontal Distance</h2>
+      <p>
+        The first value in the "text-shadow" element of CSS is the horizontal distance. The CSS basically creates a
+        duplicate line of text and shifts it horizontally to the right however many pixels you specify. In the example
+        below, I shifted the shadow horizontally only, with no vertical shifts, so we can see what it's like.
+      </p>
+      <!--CODEPEN INSERTS-->
+      <p class="codepen" data-height="386" data-theme-id="light" data-default-tab="css,result" data-user="emmajoi"
+        data-slug-hash="KKNzZEB"
+        style="height: 386px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+        data-pen-title="Horizontal Shadow">
+        <span>See the Pen <a href="https://codepen.io/emmajoi/pen/KKNzZEB">
+            Horizontal Shadow</a> by Emma Gardner (<a href="https://codepen.io/emmajoi">@emmajoi</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <br>
+      <h2>Vertical Distance</h2>
+      <p>
+        This is the second value in the "text-shadow" element. The vertical distance puts the
+        duplicate text, or shadow, below it. The shadow is also shifted by pixels, the same way the horizontal
+        value was shifted. Below is an example of a vertical shift, without the horizontal.
+      </p>
+      <!--CODEPEN INSERTS-->
+      <p class="codepen" data-height="383" data-theme-id="light" data-default-tab="css,result" data-user="emmajoi"
+        data-slug-hash="yLVOpZR"
+        style="height: 383px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+        data-pen-title="Vertical Shadow">
+        <span>See the Pen <a href="https://codepen.io/emmajoi/pen/yLVOpZR">
+            Vertical Shadow</a> by Emma Gardner (<a href="https://codepen.io/emmajoi">@emmajoi</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <br>
+      <h2>Blur</h2>
+      <p>
+        This element is optional but in my opinion it really makes a shadow look like a shadow! The blur is also done
+        pixels. The higher the number, the more blurry it becomes.
+      </p>
+      <!--CODEPEN INSERTS-->
+      <p class="codepen" data-height="373" data-theme-id="light" data-default-tab="css,result" data-user="emmajoi"
+        data-slug-hash="MWbyrGB"
+        style="height: 373px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+        data-pen-title="Blur Shadow">
+        <span>See the Pen <a href="https://codepen.io/emmajoi/pen/MWbyrGB">
+            Blur Shadow</a> by Emma Gardner (<a href="https://codepen.io/emmajoi">@emmajoi</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <br>
+      <h2>Color</h2>
+      <p>
+        This is another optional tag; however, if you know how to use it, you can make your shadows look much better.
+        For this example, I used really heinous colors together but it shows the contrast better. By default, the shadow
+        will be the color of the text. CHANGE
+      </p>
+      <!--CODEPEN INSERTS-->
+      <p class="codepen" data-height="372" data-theme-id="light" data-default-tab="css,result" data-user="emmajoi"
+        data-slug-hash="wvoGpZP"
+        style="height: 372px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+        data-pen-title="Blur Shadow">
+        <span>See the Pen <a href="https://codepen.io/emmajoi/pen/wvoGpZP">
+            Blur Shadow</a> by Emma Gardner (<a href="https://codepen.io/emmajoi">@emmajoi</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <br>
+      <h2>Other Fancy Shadow Options</h2>
+      <h3>Flipped Shadow</h3>
+      <p>
+        If you need to have your shadows go the opposite direction, you can use negative numbers as tags!
+      </p>
+      <!--CODEPEN INSERTS-->
+      <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="emmajoi"
+        data-slug-hash="WNowMvK"
+        style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+        data-pen-title="Flipped Shadow">
+        <span>See the Pen <a href="https://codepen.io/emmajoi/pen/WNowMvK">
+            Flipped Shadow</a> by Emma Gardner (<a href="https://codepen.io/emmajoi">@emmajoi</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <h3>Stacked Shadow</h3>
+      <p>
+        This is my person favorite style of shadow. If you add more than one shadow, add more by separating with commas,
+        it gives it a block effect. This example, I layered 7 shadows on top of one another to give that effect.
+      </p>
+      <!--CODEPEN INSERTS-->
+      <p class="codepen" data-height="348" data-theme-id="light" data-default-tab="css,result" data-user="emmajoi"
+        data-slug-hash="mdOPpZW"
+        style="height: 348px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+        data-pen-title="Blur Shadow">
+        <span>See the Pen <a href="https://codepen.io/emmajoi/pen/mdOPpZW">
+            Blur Shadow</a> by Emma Gardner (<a href="https://codepen.io/emmajoi">@emmajoi</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+  </main>
 </body>
+
 </html>
