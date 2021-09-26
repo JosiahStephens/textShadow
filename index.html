@@ -8,20 +8,20 @@
     <title>Text-shadow</title>
     <style>
         main {
-          display: flex;
-          flex-direction: column;
-          align-items: left;
-          color: #000000
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            color: #000000
         }
-    
+
         article {
-          max-width: 80em;
+            max-width: 80em;
         }
-    
+
         body {
-          background-color: #dadada;
+            background-color: #dadada;
         }
-      </style>
+    </style>
     <meta name="description" content="An explanation of text-shadow">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -44,8 +44,17 @@
         </nav>
     </header>
     <h1>Text-shadow</h1>
+    <p> The text-shadow property adds a shadow to each letter or symbol that makes the text look as if it is hovering or
+        popping out. They are drawn behind the text but in front of the background and border. The value for a
+        text-shadow property has multiple measurements: a horizontal offset, a vertical set, color, and a potential blur
+        radius.</p>
     <article>
-        <!--  -->
+        <h2>Right Shadow</h2>
+        <p>The right shadow is created by the first value in the text-shadow element, which is horizontal distance. The
+            shadow will move to the right as many pixels as you designate. If you put a negative sign in front, the
+            shadow will move the opposite direction. In the example below it has been shifted
+            horizontally 7 px and the blue color has been added in so that we can see the black shadow.
+        </p>
         <!-- codepen 1 -->
         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNOgdxV"
             data-editable="true" data-user="josiahstephens"
@@ -56,7 +65,11 @@
         </p>
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         <br>
-        <!--  -->
+        <h2>All Directions</h2>
+        <p>Shadows that are applied in all directions are created by changing both the horizontal and vertical values.
+            In the example below, the shadow is offset horizontally to the right 15px and vertically down 15px. This
+            aligns the shadow in the bottom right corner of the text.
+        </p>
         <!-- codepen 2 -->
         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qBjMpjp"
             data-editable="true" data-user="josiahstephens"
@@ -67,7 +80,13 @@
         </p>
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         <br>
-        <!--  -->
+        <h2>Glowing Letters</h2>
+        <p>The optional blur radius is what enables letters to look as if they are glowing. The blur option is done by
+            pixels. The higher the pixels the more blurred it will become. Notice in the CSS that it is not altered
+            horizontally or vertically. The blurred radius combined with the color of the shadow will make it look like
+            it is glowing. Note that it is important to have differing colors with the shadow and the text so that you
+            can tell them a part.
+        </p>
         <!-- codepen 3 -->
         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dyRqepd"
             data-editable="true" data-user="josiahstephens"
@@ -78,7 +97,11 @@
         </p>
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         <br>
-        <!--  -->
+        <h2>Multiple Shadows</h2>
+        <p>In the example below, we see multiple shadows lined up to the right, below, and above. When adding multiple
+            shadows you need to separate them by commas. Depending on how many different shadows are stacked on top of
+            each other, it can lead to making it look three dimensional.
+        </p>
         <!-- codepen 4 -->
         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="oNwPdqy"
             data-editable="true" data-user="josiahstephens"
